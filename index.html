@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>angular practice</title>
+  </head>
+<body>
+
+<h1>The input element</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+<div ng-controller="myFirstController">
+<input type="text" ng-model="name" ng-keyup="displayVal();">
+<p>Entered value for name is {{totalNameValue}}</p>
+</div>
+
+</body>
+</html>
